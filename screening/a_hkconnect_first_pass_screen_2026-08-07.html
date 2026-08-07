@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>A股与港股通第一轮机会筛选｜公开版</title>
+<style>
+:root{--ink:#15232f;--muted:#63717d;--paper:#f5f2eb;--card:#fffefa;--navy:#173b4f;--teal:#0d796f;--gold:#b7791f;--red:#a63d40;--line:#d7d2c8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Microsoft YaHei",Arial,sans-serif;line-height:1.6}
+.hero{background:linear-gradient(125deg,#102d3d,#1d5660 65%,#9a6a22);color:white;padding:54px 0 44px}.wrap{max-width:1240px;margin:auto;padding:0 28px}
+.kicker{letter-spacing:.13em;font-size:12px;font-weight:700;color:#bde5df}h1{font-size:40px;line-height:1.15;margin:12px 0 14px}.lead{max-width:880px;font-size:18px;color:#e7f0ef;margin:0}.meta{margin-top:18px;font-size:13px;color:#c7d7d7}
+.snapshot{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-24px}.tile,.panel,.idea-card{background:var(--card);border:1px solid var(--line);box-shadow:0 8px 24px rgba(34,48,56,.08);border-radius:12px}.tile{padding:20px}.tile b{font-size:28px;color:var(--navy);display:block}.tile span{font-size:13px;color:var(--muted)}
+section{margin:34px 0}h2{font-size:26px;margin:0 0 12px}h3{margin:0 0 10px}.sub{color:var(--muted);margin-top:-6px}.panel{padding:24px}
+.funnel{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}.step{flex:1;min-width:170px;background:#edf3f1;border-radius:10px;padding:16px;position:relative}.step b{display:block;font-size:22px;color:var(--teal)}.step span{font-size:13px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;background:#e7ece9;color:#2d4952;padding:11px 10px;position:sticky;top:0}td{padding:12px 10px;border-bottom:1px solid #e4e0d8;vertical-align:top}td small{display:block;color:var(--muted);margin-top:3px}td.risk{color:#71393b;min-width:220px}
+.pill{display:inline-block;border-radius:999px;padding:3px 9px;margin-right:7px;font-size:11px;font-weight:700;letter-spacing:.03em}.pill.a{background:#d7efe7;color:#0c635c}.pill.b{background:#f8ead1;color:#885812}.pill.hold{background:#dce7ef;color:#234d66}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.idea-card{padding:18px}.idea-card b{font-size:18px}.idea-card .price{font-size:24px;color:var(--navy);font-weight:700;margin:9px 0}.idea-card p{margin:5px 0 10px}.idea-card .mini{font-size:12px;color:var(--muted)}.idea-card a{display:inline-block;margin-top:10px;color:var(--teal);text-decoration:none;font-weight:600}
+.note{border-left:4px solid var(--gold);background:#fff5df;padding:14px 16px;border-radius:0 8px 8px 0}.danger{border-left-color:var(--red);background:#faeeee}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.sources li{margin:8px 0}a{color:#0b6f69}.topnav{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;font-size:13px}.topnav a{color:#dff5f1;text-decoration:none}.public-badge{border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:3px 10px;color:#fff}footer{padding:30px 0 50px;color:var(--muted);font-size:12px}
+@media(max-width:850px){.snapshot{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}h1{font-size:32px}.table-wrap{overflow:auto}table{min-width:1050px}}
+</style></head><body>
+<header class='hero'><div class='wrap'><nav class='topnav'><a href='../index.html'>← 返回研究总目录</a><span class='public-badge'>公开版</span></nav><div class='kicker'>A-SHARE + SOUTHBOUND STOCK CONNECT · FIRST-PASS IDEA TRIAGE</div><h1>A股与港股通第一轮机会筛选</h1><p class='lead'>量化初筛负责寻找“值得研究的异常值”，人工复核负责判断它是机会、周期高点，还是会计口径造成的假便宜。本页给出研究优先级，不是最终买入建议。</p><div class='meta'>公开版｜行情：2026-08-07盘中/延时快照｜财务字段：当日公开信息最新已披露口径｜研究期限：12–24个月</div></div></header>
+<main class='wrap'>
+<div class='snapshot'><div class='tile'><b>5,892</b><span>A股原始证券行</span></div><div class='tile'><b>621</b><span>沪港通可买港股结构化名单</span></div><div class='tile'><b>787</b><span>通过第一轮硬过滤：654 A股 + 133港股</span></div><div class='tile'><b>28</b><span>进入人工研究队列：18新发现 + 10既有</span></div></div>
+
+<section><h2>先看结论</h2><div class='panel'><p><b>这轮最值得新增研究的不是资源股，而是四组赔率：</b>低估值耐用品龙头（格力、海尔H、美的A）、平台与食品现金流（腾讯、万洲）、银行质量折价（招商银行A、江苏银行），以及部分盈利修复但估值未完全抬升的游戏和医药公司（吉比特、恺英、三生国健）。</p><p>横截面排名最高的一批其实是铝、金铜和航运公司。它们的利润增长与商品/运价高度相关，因此没有机械进入A档。中国海油H、中远海能H等已有深研标的仍保留，但采用中周期框架。</p><div class='note'><b>两个排序仍需分开：</b>本页“新增研究优先级”回答新资金应该先研究谁；中国神华A、中国移动H等已有仓位的持有价值不会因为新资金赔率不高而自动下降。</div></div></section>
+
+<section><h2>筛选漏斗</h2><div class='funnel'><div class='step'><b>全市场</b><span>A股普通证券 + 港股行情 + 港股通资格</span></div><div class='step'><b>硬过滤</b><span>市值≥100亿元、成交额≥3000万元、非ST、正估值</span></div><div class='step'><b>分模型评分</b><span>普通企业、金融、强周期分别处理</span></div><div class='step'><b>人工反误报</b><span>一次性利润、周期高点、高杠杆、A/H重复</span></div><div class='step'><b>深研队列</b><span>A档立即研究，B档等价格或财报证据</span></div></div></section>
+
+<section><h2>18个新增研究候选</h2><p class='sub'>A档表示优先进入简版五层分析；B档表示需要先等一个证据或价格。排名是研究顺序，不是仓位顺序。</p><div class='table-wrap'><table><thead><tr><th>#</th><th>状态</th><th>公司/证券</th><th>快照价</th><th>PE / PB</th><th>为什么出现</th><th>第一淘汰条件</th></tr></thead><tbody>
+        <tr>
+          <td><b>1</b></td><td><span class='pill a'>A</span></td>
+          <td><b>格力电器</b><small>A股 · 000651</small></td>
+          <td>40.220<small>市值 2,253亿</small></td>
+          <td>7.7× / 1.48×</td>
+          <td>低估值现金牛<small>7.7×PE、1.48×PB，家电龙头中估值最低；适合先验证真实分红覆盖和渠道质量。</small></td>
+          <td class='risk'>收入与利润增长接近停滞，低估值可能只是缺乏增长。</td>
+        </tr>
+        <tr>
+          <td><b>2</b></td><td><span class='pill a'>A</span></td>
+          <td><b>腾讯控股</b><small>港股通-沪 · 00700</small></td>
+          <td>478.800<small>市值 43,488亿</small></td>
+          <td>16.5× / 3.42×</td>
+          <td>平台现金流重估<small>约16.5×公开口径PE；如果AI投入转化为广告、游戏与云利润，估值并不高。</small></td>
+          <td class='risk'>公开港股横截面缺少本期增长字段，且AI资本开支与监管风险需重建模型。</td>
+        </tr>
+        <tr>
+          <td><b>3</b></td><td><span class='pill a'>A</span></td>
+          <td><b>海尔智家</b><small>港股通-沪 · 06690</small></td>
+          <td>20.940<small>市值 1,964亿</small></td>
+          <td>9.4× / 1.38×</td>
+          <td>A/H相对价值<small>H股约9.4×PE、1.38×PB，较A股估值更低，海外品牌和高端化提供质量支撑。</small></td>
+          <td class='risk'>本期收入与利润下降，需核验海外需求、汇率和卡萨帝增长。</td>
+        </tr>
+        <tr>
+          <td><b>4</b></td><td><span class='pill a'>A</span></td>
+          <td><b>美的集团</b><small>A股 · 000333</small></td>
+          <td>84.030<small>市值 6,410亿</small></td>
+          <td>14.5× / 3.11×</td>
+          <td>全球制造复利<small>约14.5×PE，规模、现金流与全球渠道兼具；A股比H股价格更有吸引力。</small></td>
+          <td class='risk'>当前增长并不快，海外并购与机器人业务不能提前计满。</td>
+        </tr>
+        <tr>
+          <td><b>5</b></td><td><span class='pill a'>A</span></td>
+          <td><b>万洲国际</b><small>港股通-沪 · 00288</small></td>
+          <td>7.900<small>市值 1,014亿</small></td>
+          <td>8.3× / 1.16×</td>
+          <td>低估值防守<small>约8.3×PE、1.16×PB，食品与肉制品现金流可能提供估值保护。</small></td>
+          <td class='risk'>猪价、美国业务利润率和分红税后收益需核验。</td>
+        </tr>
+        <tr>
+          <td><b>6</b></td><td><span class='pill a'>A</span></td>
+          <td><b>招商银行</b><small>A股 · 600036</small></td>
+          <td>38.830<small>市值 9,793亿</small></td>
+          <td>6.5× / 0.88×</td>
+          <td>优质银行底仓<small>约6.5×PE、0.88×PB；若资产质量和零售负债优势保持，当前估值有修复空间。</small></td>
+          <td class='risk'>息差、地产与零售不良生成可能让低PB长期化。</td>
+        </tr>
+        <tr>
+          <td><b>7</b></td><td><span class='pill a'>A</span></td>
+          <td><b>电投能源</b><small>A股 · 002128</small></td>
+          <td>27.850<small>市值 871亿</small></td>
+          <td>14.9× / 1.69×</td>
+          <td>资源公用一体化<small>约14.9×PE、1.69×PB，煤铝电协同和较低杠杆值得做中周期承保。</small></td>
+          <td class='risk'>商品价格高位可能抬高当前利润，必须改用中周期盈利。</td>
+        </tr>
+        <tr>
+          <td><b>8</b></td><td><span class='pill a'>A</span></td>
+          <td><b>吉比特</b><small>A股 · 603444</small></td>
+          <td>384.730<small>市值 277亿</small></td>
+          <td>13.7× / 5.04×</td>
+          <td>游戏现金流修复<small>约13.7×PE，最新收入与利润增速很高，估值尚未反映持续高增。</small></td>
+          <td class='risk'>单款产品、流水递延和新品寿命可能制造峰值利润。</td>
+        </tr>
+        <tr>
+          <td><b>9</b></td><td><span class='pill a'>A</span></td>
+          <td><b>新 和 成</b><small>A股 · 002001</small></td>
+          <td>30.500<small>市值 937亿</small></td>
+          <td>14.0× / 2.87×</td>
+          <td>成本优势化工龙头<small>约14.0×PE、2.87×PB，收入增长仍为正，适合检查维生素价格与产能兑现。</small></td>
+          <td class='risk'>化工价格周期会让静态PE失真；最新利润增长已有放缓。</td>
+        </tr>
+        <tr>
+          <td><b>10</b></td><td><span class='pill a'>A</span></td>
+          <td><b>江苏银行</b><small>A股 · 600919</small></td>
+          <td>11.670<small>市值 2,142亿</small></td>
+          <td>5.9× / 0.61×</td>
+          <td>高ROE低估银行<small>约5.9×PE、0.61×PB，收入和利润仍增长，估值保护明显。</small></td>
+          <td class='risk'>必须核验不良生成、拨备释放、城投地产暴露和资本充足率。</td>
+        </tr>
+        <tr>
+          <td><b>11</b></td><td><span class='pill a'>A</span></td>
+          <td><b>恺英网络</b><small>A股 · 002517</small></td>
+          <td>18.010<small>市值 385亿</small></td>
+          <td>17.8× / 3.79×</td>
+          <td>游戏增长与估值<small>约17.8×PE，收入和利润增长显著，具备新品与IP催化。</small></td>
+          <td class='risk'>买量成本、产品集中与版号节奏可能使高增长不可持续。</td>
+        </tr>
+        <tr>
+          <td><b>12</b></td><td><span class='pill a'>A</span></td>
+          <td><b>福耀玻璃</b><small>A股 · 600660</small></td>
+          <td>55.610<small>市值 1,451亿</small></td>
+          <td>16.1× / 4.03×</td>
+          <td>全球份额提升<small>约16.1×PE，汽车玻璃壁垒、海外产能和高现金回报值得进一步承保。</small></td>
+          <td class='risk'>最新利润增长为负，关税、海外成本和汽车周期需解释。</td>
+        </tr>
+        <tr>
+          <td><b>13</b></td><td><span class='pill a'>A</span></td>
+          <td><b>三生国健</b><small>A股 · 688336</small></td>
+          <td>44.600<small>市值 400亿</small></td>
+          <td>13.4× / 4.79×</td>
+          <td>生物药放量<small>约13.4×PE，收入和利润增长快，资产负债表轻。</small></td>
+          <td class='risk'>医药横截面可能受授权或一次性项目影响，需拆产品收入与经常性利润。</td>
+        </tr>
+        <tr>
+          <td><b>14</b></td><td><span class='pill b'>B</span></td>
+          <td><b>瀚蓝环境</b><small>A股 · 600323</small></td>
+          <td>29.560<small>市值 241亿</small></td>
+          <td>10.9× / 1.59×</td>
+          <td>公用事业低估修复<small>约10.9×PE、1.59×PB，收入和利润增长较快。</small></td>
+          <td class='risk'>资产负债率约69%，并购、资本开支和利息负担可能吞噬股东现金。</td>
+        </tr>
+        <tr>
+          <td><b>15</b></td><td><span class='pill b'>B</span></td>
+          <td><b>世纪华通</b><small>A股 · 002602</small></td>
+          <td>13.830<small>市值 1,019亿</small></td>
+          <td>16.2× / 3.20×</td>
+          <td>游戏利润修复<small>约16.2×PE，收入和利润增长明显，规模大于多数游戏同业。</small></td>
+          <td class='risk'>治理历史、商誉和增长可持续性是首要淘汰项。</td>
+        </tr>
+        <tr>
+          <td><b>16</b></td><td><span class='pill b'>B</span></td>
+          <td><b>亿联网络</b><small>A股 · 300628</small></td>
+          <td>38.920<small>市值 493亿</small></td>
+          <td>18.3× / 5.91×</td>
+          <td>轻资产出海<small>约18.3×PE，收入与利润保持增长，资产负债表很轻。</small></td>
+          <td class='risk'>PB接近6倍，海外需求和产品迭代稍弱就会压缩估值。</td>
+        </tr>
+        <tr>
+          <td><b>17</b></td><td><span class='pill b'>B</span></td>
+          <td><b>上港集团</b><small>A股 · 600018</small></td>
+          <td>5.190<small>市值 1,208亿</small></td>
+          <td>8.8× / 0.85×</td>
+          <td>港口资产折价<small>约8.8×PE、0.85×PB，吞吐与土地/投资资产提供底部支撑。</small></td>
+          <td class='risk'>低PE可能包含投资收益和一次性贡献，需重算港口主业ROIC。</td>
+        </tr>
+        <tr>
+          <td><b>18</b></td><td><span class='pill b'>B</span></td>
+          <td><b>青岛港</b><small>A股 · 601298</small></td>
+          <td>8.930<small>市值 580亿</small></td>
+          <td>11.1× / 1.27×</td>
+          <td>稳定港口现金流<small>约11.1×PE、1.27×PB，业务稳定、估值适中。</small></td>
+          <td class='risk'>最新利润增速偏弱，当前成交额也接近流动性门槛。</td>
+        </tr></tbody></table></div></section>
+
+<section><h2>既有33家公司：筛选后的保留队列</h2><p class='sub'>这些公司已有完整五层报告；这里仅根据新价格与全市场横截面更新研究优先级。</p><div class='grid'>
+        <article class='idea-card'>
+          <div><span class='pill hold'>继续优先</span><b>中国海洋石油</b></div>
+          <div class='price'>23.080 <small>港股通-沪 · 00883</small></div>
+          <p>低成本、净现金和分红仍是33家公司中最完整的价值组合。</p>
+          <div class='mini'>PE 7.8× · PB 1.16× · 60日 -12.5%</div>
+          <a href='../reports/01_中国海洋石油.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>继续优先</span><b>中远海能</b></div>
+          <div class='price'>14.620 <small>港股通-沪 · 01138</small></div>
+          <p>利润弹性已经出现；H股仍优于A股，但必须按运价中枢承保。</p>
+          <div class='mini'>PE 13.0× · PB 1.46× · 60日 -20.5%</div>
+          <a href='../reports/11_中远海能.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>继续优先</span><b>羚锐制药</b></div>
+          <div class='price'>22.120 <small>A股 · 600285</small></div>
+          <p>OTC现金牛和股息保护仍在，现价较此前报告略低。</p>
+          <div class='mini'>PE 15.9× · PB 4.15× · 60日 5.9%</div>
+          <a href='../reports/33_羚锐制药.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>继续优先</span><b>泡泡玛特</b></div>
+          <div class='price'>157.100 <small>港股 · 09992</small></div>
+          <p>估值压缩后仍值得跟踪海外与库存，横截面因PB门槛被机械剔除，人工恢复。</p>
+          <div class='mini'>PE 14.8× · PB 8.55× · 60日 -1.9%</div>
+          <a href='../reports/31_泡泡玛特.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>观察催化</span><b>海底捞</b></div>
+          <div class='price'>11.210 <small>港股通-沪 · 06862</small></div>
+          <p>价格继续回落，消费修复赔率提高；需等翻台率和主品牌收入确认。</p>
+          <div class='mini'>PE 13.9× · PB 5.64× · 60日 -23.8%</div>
+          <a href='../reports/21_海底捞.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>防守持有</span><b>中国移动</b></div>
+          <div class='price'>81.850 <small>港股通-沪 · 00941</small></div>
+          <p>H股约11.7×PE，仍是高股息和现金流底仓。</p>
+          <div class='mini'>PE 11.7× · PB 1.07× · 60日 -2.5%</div>
+          <a href='../reports/16_中国移动.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>持有不追</span><b>中国神华</b></div>
+          <div class='price'>43.970 <small>A股 · 601088</small></div>
+          <p>A股约18.5×公开口径PE；已有仓位可持有，但重组后每股现金回报仍待证明。</p>
+          <div class='mini'>PE 18.5× · PB 2.08× · 60日 -0.4%</div>
+          <a href='../reports/02_中国神华.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>防守观察</span><b>中国电信</b></div>
+          <div class='price'>4.500 <small>港股通-沪 · 00728</small></div>
+          <p>H股约11.6×PE，股息属性仍在，但利润下滑需要修复。</p>
+          <div class='mini'>PE 11.6× · PB 0.78× · 60日 -16.0%</div>
+          <a href='../reports/17_中国电信.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>观察</span><b>美亚光电</b></div>
+          <div class='price'>15.300 <small>A股 · 002690</small></div>
+          <p>净现金与股息仍有支撑；当前约18.6×PE，吸引力低于此前快照。</p>
+          <div class='mini'>PE 18.6× · PB 5.60× · 60日 -6.8%</div>
+          <a href='../reports/27_美亚光电.html'>打开既有深度报告 →</a>
+        </article>
+        <article class='idea-card'>
+          <div><span class='pill hold'>低流动性观察</span><b>远大医药</b></div>
+          <div class='price'>5.135 <small>港股 · 00512</small></div>
+          <p>价格约5.14港元，但当日成交额不足默认门槛，应降低仓位容量预期。</p>
+          <div class='mini'>PE 14.7× · PB 1.07× · 60日 -13.3%</div>
+          <a href='../reports/29_远大医药.html'>打开既有深度报告 →</a>
+        </article></div></section>
+
+<section><h2>这轮最容易出现的假阳性</h2><div class='panel table-wrap'><table><thead><tr><th>误报来源</th><th>典型公司</th><th>为什么不直接晋级</th></tr></thead><tbody><tr><td><b>铝产业链</b></td><td>云铝股份、神火股份、中国铝业、中国宏桥</td><td>多只同时高分主要来自铝价和利润高增长；先按中周期铝价重算，不直接按静态PE晋级。</td></tr><tr><td><b>金铜资源</b></td><td>紫金矿业、洛阳钼业、赤峰黄金等</td><td>商品价格高位令利润和动量同时好看，需把资源量、成本曲线和资本开支纳入。</td></tr><tr><td><b>航运</b></td><td>招商轮船、招商南油、东方海外国际</td><td>运价弹性真实，但不能把旺季利润资本化；只保留资产负债表最好、股东回报最清楚者。</td></tr><tr><td><b>投资收益型低PE</b></td><td>吉林敖东、雅戈尔、东方精工</td><td>静态利润可能由投资、公允价值或处置收益驱动，不能视为经营性现金流。</td></tr><tr><td><b>地产低PB</b></td><td>华润置地等</td><td>低PB无法回答销售回款、土地减值和融资约束，暂不进入A档。</td></tr><tr><td><b>银行横截面</b></td><td>北京银行、南京银行、宁波银行等</td><td>低PE/PB只是一张入场券，需用不良生成、拨备、息差和资本充足率二次筛。</td></tr></tbody></table></div></section>
+
+<section><h2>方法与边界</h2><div class='panel'><div class='legend'><span>市场价/市值/PE/PB：东方财富公开行情接口</span><span>港股有延时</span><span>成交额为抓取当日，不等于60日均值</span><span>港股财务增长字段缺失时不打高置信分</span></div><ul><li>硬过滤采用100亿元人民币或港币口径附近的市值门槛；本轮未做完整币种换算，因此边界公司需要二次校准。</li><li>A/H按同一发行人看基本面，但交易线分别计算；本轮表格保留更有研究价值的一条证券。</li><li>金融股不使用普通企业自由现金流框架；资源和航运股不以静态低PE直接加分。</li><li>公开接口的动态PE、财务报告期和字段定义不等同于付费终端一致预期。进入前20名后必须回到年报、中报和交易所公告重算。</li><li>沪港通名单已结构化取得；深港通独有标的尚未形成同质量批量名单，因此本轮港股覆盖不是完整的南向并集。主要大型候选会在下一轮逐一核验港股通资格。</li></ul><div class='note danger'><b>不能用本页直接下单：</b>这是一份研究分流报告。尤其是游戏、医药、银行和周期股，必须先验证利润来源、现金流、资本约束和最新公告。</div></div></section>
+
+<section><h2>公开来源</h2><div class='panel sources'><ol><li><a href='https://www.hkex.com.hk/mutual-market/stock-connect/eligible-stocks/view-all-eligible-securities?sc_lang=zh-HK' target='_blank' rel='noopener'>香港交易所：所有合资格证券</a>，页面更新日期2026-08-06。</li><li><a href='https://www.sse.com.cn/services/hkexsc/disclo/eligible/' target='_blank' rel='noopener'>上海证券交易所：港股通标的证券名单</a>。</li><li><a href='https://quote.eastmoney.com/center/gridlist.html#hs_a_board' target='_blank' rel='noopener'>东方财富：沪深京A股行情中心</a>，用于价格、市值、成交额及横截面估值初筛。</li><li><a href='https://quote.eastmoney.com/center/gridlist.html#hk_sh_stocks' target='_blank' rel='noopener'>东方财富：港股通（沪）行情中心</a>，用于港股通行情初筛。</li></ol><p class='sub'>为避免公开站点暴露本地研究资料与中间文件，原始快照、排序明细和内部工作路径未随本页发布。</p></div></section>
+</main><footer><div class='wrap'>公开版｜数据快照 2026-08-07｜本页仅用于研究交流，不构成投资建议；价格、估值与公司信息可能已经变化</div></footer></body></html>
